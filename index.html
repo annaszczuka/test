@@ -1,8 +1,103 @@
 <!DOCTYPE>
 <html>
-<title>Szczuka</title>
+<title>Alex Szczuka</title>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
+<!The search bar code>
+<head>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+* {box-sizing: border-box;}
+
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.topnav {
+  overflow: hidden;
+  background-color: #c3e3fc ;
+}
+
+.topnav a {
+  float: left;
+  display: block;
+  color: black;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+.topnav a.active {
+  background-color: #2196F3;
+  color: white;
+}
+
+.topnav .search-container {
+  float: right;
+}
+
+.topnav input[type=text] {
+  padding: 6px;
+  margin-top: 8px;
+  font-size: 17px;
+  border: none;
+}
+
+.topnav .search-container button {
+  float: right;
+  padding: 8px 10px;
+  margin-top: 8px;
+  margin-right: 16px;
+  background: #ddd;
+  font-size: 17px;
+  border: none;
+  cursor: pointer;
+}
+
+.topnav .search-container button:hover {
+  background: #ccc;
+}
+
+@media screen and (max-width: 600px) {
+  .topnav .search-container {
+    float: none;
+  }
+  .topnav a, .topnav input[type=text], .topnav .search-container button {
+    float: none;
+    display: block;
+    text-align: left;
+    width: 100%;
+    margin: 0;
+    padding: 14px;
+  }
+  .topnav input[type=text] {
+    border: 1px solid #ccc;
+  }
+}
+</style>
+</head>
+<body>
+
+<div class="topnav">
+
+  <div class="search-container">
+    <form action="/action_page.php">
+      <input type="text" placeholder="Search.." name="search">
+      <button type="submit"><i class="fa fa-search"></i></button>
+    </form>
+  </div>
+</div>
+
+
+<!The header code>
+</body>
 <style>
 body {
   font-family: Arial, Helvetica, sans-serif;
@@ -11,9 +106,9 @@ body {
 
 /* Style the header */
 .header {
-  padding: 80px;
+  padding: 1px;
   text-align: center;
-  background: #1abc9c;
+  background: #c3e3fc ;
   color: black;
 }
 
@@ -27,10 +122,11 @@ body {
 <body>
 
 <div class="header">
-  <h1>Alexsandra Szczuka</h1>
+  <h1>Aleksandra Szczuka</h1>
 </div>
 
 </body>
+
 
 
 <head>
@@ -47,58 +143,70 @@ body, html {
 
 /* Style tab links */
 .tablink {
-  background-color: #555;
-  color: white;
+  background-color: #C3E4ED;
+  color: black;
   float: left;
   border: none;
   outline: none;
   cursor: pointer;
   padding: 14px 16px;
   font-size: 17px;
-  width: 25%;
+  width: 16.666%;
 }
 
 .tablink:hover {
-  background-color: #777;
+  background-color: #9AC0CD;
 }
 
 /* Style the tab content (and add height:100% for full page content) */
 .tabcontent {
-  color: white;
+  color: black;
   display: none;
   padding: 100px 20px;
   height: 100%;
 }
 
-#Home {background-color: blue;}
-#News {background-color: green;}
-#Contact {background-color: blue;}
-#About {background-color: orange;}
+#Home {background-color: #F0FFFF;}
+#About {background-color: #f0fff3 ;}
+#Publications {background-color:#daebe8;}
+#Outreach {background-color: #F0FFFF;}
+#News {background-color: #f0fff3;}
+#Contact {background-color: #daebe8;}
 </style>
 </head>
 <body>
 
-<button class="tablink" onclick="openPage('Home', this, 'red')">Home</button>
-<button class="tablink" onclick="openPage('News', this, 'green')" id="defaultOpen">News</button>
-<button class="tablink" onclick="openPage('Contact', this, 'blue')">Contact</button>
-<button class="tablink" onclick="openPage('About', this, 'orange')">About</button>
+<button class="tablink" onclick="openPage('Home', this, '#F0FFFF')"id="defaultOpen">Home</button>
+<button class="tablink" onclick="openPage('About', this, ' #f0fff3 ')">About</button>
+<button class="tablink" onclick="openPage('Publications', this, '#daebe8')">Publications</button>
+<button class="tablink" onclick="openPage('Outreach', this, '#F0FFFF')">Outreach</button>
+<button class="tablink" onclick="openPage('News', this, ' #f0fff3 ')">News</button>
+<button class="tablink" onclick="openPage('Contact', this, '#daebe8')">Contact</button>
 
 <div id="Home" class="tabcontent">
   <h3>Home</h3>
   <p>Home is where the heart is..</p>
 </div>
 
-<div id="News" class="tabcontent">
+<div id="About" class="tabcontent">
   <h3>News</h3>
   <p>Some news this fine day!</p>
 </div>
 
-<div id="Contact" class="tabcontent">
+<div id="Publications" class="tabcontent">
   <h3>Contact</h3>
   <p>Get in touch, or swing by for a cup of coffee.</p>
 </div>
 
-<div id="About" class="tabcontent">
+<div id="Outreach" class="tabcontent">
+  <h3>About</h3>
+  <p>Who we are and what we do.</p>
+</div>
+<div id="News" class="tabcontent">
+  <h3>About</h3>
+  <p>Who we are and what we do.</p>
+</div>
+<div id="Contact" class="tabcontent">
   <h3>About</h3>
   <p>Who we are and what we do.</p>
 </div>
